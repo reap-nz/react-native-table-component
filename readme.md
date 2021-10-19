@@ -12,6 +12,8 @@
 
 This is a table component for react native.
 
+:exclamation: This package is NOT being actively maintained/supported. This is a forked version of [react-native-table-component](https://github.com/Gil2015/react-native-table-component#readme) and includes a change to support newer versions of react-native-web. 
+
 - [Installation](#installation)
 - [Changelogs](#changelogs)
 - [Examples](#examples)
@@ -23,11 +25,11 @@ This is a table component for react native.
 <br/><br/>
 
 ## Installation
-> npm install react-native-table-component
+> npm install react-native-table-component-2
 
 `USE:`
 ```jsx
-import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
+import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component-2';
 ```
 
 <img src="https://github.com/Gil2015/tools_file/blob/master/img/react-native-table-component/example.jpg?raw=true" width="375"/>
@@ -51,7 +53,7 @@ import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-ta
 ```jsx
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Table, Row, Rows } from 'react-native-table-component';
+import { Table, Row, Rows } from 'react-native-table-component-2';
 
 export default class ExampleOne extends Component {
   constructor(props) {
@@ -95,7 +97,7 @@ const styles = StyleSheet.create({
 ```jsx
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Table, TableWrapper, Row, Rows, Col } from 'react-native-table-component';
+import { Table, TableWrapper, Row, Rows, Col } from 'react-native-table-component-2';
 
 export default class ExampleTwo extends Component {
   constructor(props) {
@@ -146,7 +148,7 @@ const styles = StyleSheet.create({
 ```jsx
 import React, { Component } from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
-import { Table, TableWrapper, Row } from 'react-native-table-component';
+import { Table, TableWrapper, Row } from 'react-native-table-component-2';
 
 export default class ExampleThree extends Component {
   constructor(props) {
@@ -214,7 +216,7 @@ const styles = StyleSheet.create({
 ```jsx
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Alert } from 'react-native';
-import { Table, TableWrapper, Row, Cell } from 'react-native-table-component';
+import { Table, TableWrapper, Row, Cell } from 'react-native-table-component-2';
 
 export default class ExampleFour extends Component {
   constructor(props) {
@@ -283,7 +285,7 @@ const styles = StyleSheet.create({
 ```jsx
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Alert } from 'react-native';
-import { Table, TableWrapper,Col, Cols, Cell } from 'react-native-table-component';
+import { Table, TableWrapper,Col, Cols, Cell } from 'react-native-table-component-2';
 
 export default class ExampleFive extends Component {
   constructor(props) {
