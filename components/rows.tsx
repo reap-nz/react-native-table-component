@@ -5,10 +5,13 @@ import { Cell } from './cell';
 import { DefaultProps } from './types';
 
 export const Row: React.FC<DefaultProps<ReactText[]>> = props => {
-  const { data, style, widthArr, height, flexArr, textStyle, rowProps, ...rest } = props;
+  const {
+    data, style, widthArr, height, flexArr, textStyle,
+    onRowPress, rowIndex, ...rest
+  } = props;
   let width = widthArr ? sum(widthArr) : 0;
   return data ? (
-    <Pressable style={[height && { height }, width && { width }, styles.row, style]} {...rowProps}>
+    <Pressable style={[height && { height }, width && { width }, styles.row, style]} onPress={() => onRowPress(rowIndex)}>
       {data.map((item, i) => {
         const flex = flexArr && flexArr[i];
         const wth = widthArr && widthArr[i];
@@ -19,7 +22,7 @@ export const Row: React.FC<DefaultProps<ReactText[]>> = props => {
 };
 
 export const Rows: React.FC<DefaultProps<ReactText[][]>> = props => {
-  const { data, style, widthArr, heightArr, flexArr, textStyle, rowProps, ...rest } = props;
+  const { data, style, widthArr, heightArr, flexArr, textStyle, onRowPress, ...rest } = props;
   const flex = flexArr ? sum(flexArr) : 0;
   const width = widthArr ? sum(widthArr) : 0;
 
@@ -31,12 +34,13 @@ export const Rows: React.FC<DefaultProps<ReactText[][]>> = props => {
           <Row
             key={i}
             data={item}
+            rowIndex={i}
             widthArr={widthArr}
             height={height}
             flexArr={flexArr}
             style={style}
             textStyle={textStyle}
-            rowProps={rowProps}
+            onRowPress={onRowPress}
             {...rest}
           />
         );
