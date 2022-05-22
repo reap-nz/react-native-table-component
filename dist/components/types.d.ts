@@ -1,4 +1,4 @@
-import { ReactText } from 'react';
+import React, { ReactText } from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 export declare type Data = JSX.Element | ReactText[][] | ReactText[] | ReactText;
 export interface DefaultProps<DataType extends Data> {

@@ -1,5 +1,5 @@
 import { type } from 'os';
-import { ReactText } from 'react';
+import React, { ReactText } from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
 export type Data = JSX.Element | ReactText[][] | ReactText[] | ReactText;
