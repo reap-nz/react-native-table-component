@@ -1,4 +1,3 @@
-import { type } from 'os';
 import React, { ReactText } from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 export { Row, Rows } from './components/rows';
 export { Col, Cols } from './components/cols';
 export { Table, TableWrapper } from './components/table';
