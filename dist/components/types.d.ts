@@ -1,6 +1,6 @@
-import React, { ReactText } from 'react';
+import * as React from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
-export declare type Data = JSX.Element | ReactText[][] | ReactText[] | ReactText;
+export declare type Data = JSX.Element | React.ReactText[][] | React.ReactText[] | React.ReactText;
 export interface DefaultProps<DataType extends Data> {
     style?: StyleProp<ViewStyle>;
     textStyle?: StyleProp<TextStyle>;
@@ -8,8 +8,8 @@ export interface DefaultProps<DataType extends Data> {
     rowIndex?: number;
     onRowPress?: (rowIndex: number) => void;
     data: DataType;
-    width?: ReactText;
-    height?: ReactText;
+    width?: React.ReactText;
+    height?: React.ReactText;
     flex?: number;
     heightArr?: number[];
     widthArr?: number[];

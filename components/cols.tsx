@@ -1,10 +1,10 @@
-import React, { ReactText } from 'react';
+import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { sum } from '../utils';
 import { Cell } from './cell';
 import { DefaultProps } from './types';
 
-export const Col: React.FC<DefaultProps<ReactText[]>> = props => {
+export const Col: React.FC<DefaultProps<React.ReactText[]>> = props => {
   const { data, style, width, heightArr, flex, textStyle, ...rest } = props;
 
   return data ? (
@@ -17,7 +17,7 @@ export const Col: React.FC<DefaultProps<ReactText[]>> = props => {
   ) : null;
 };
 
-export const Cols: React.FC<DefaultProps<ReactText[]>> = props => {
+export const Cols: React.FC<DefaultProps<React.ReactText[]>> = props => {
   const { data, style, widthArr, heightArr, flexArr, textStyle, ...rest } = props;
   let width = widthArr ? sum(widthArr) : 0;
 

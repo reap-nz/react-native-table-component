@@ -1,10 +1,10 @@
-import React, { ReactText } from 'react';
+import * as React from 'react';
 import { StyleSheet, View, Pressable } from 'react-native';
 import { sum } from '../utils';
 import { Cell } from './cell';
 import { DefaultProps } from './types';
 
-export const Row: React.FC<DefaultProps<ReactText[]>> = props => {
+export const Row: React.FC<DefaultProps<React.ReactText[]>> = props => {
   const {
     data, style, widthArr, height, flexArr, textStyle,
     onRowPress, rowIndex, ...rest
@@ -21,7 +21,7 @@ export const Row: React.FC<DefaultProps<ReactText[]>> = props => {
   ) : null;
 };
 
-export const Rows: React.FC<DefaultProps<ReactText[][]>> = props => {
+export const Rows: React.FC<DefaultProps<React.ReactText[][]>> = props => {
   const { data, style, widthArr, heightArr, flexArr, textStyle, onRowPress, ...rest } = props;
   const flex = flexArr ? sum(flexArr) : 0;
   const width = widthArr ? sum(widthArr) : 0;
