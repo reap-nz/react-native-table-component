@@ -1,7 +1,7 @@
 {
-  "name": "react-native-table-component-2",
+  "name": "react-native-table-component",
   "version": "2.0.0",
-  "description": "Build table for react native. Forked from the original 'react-native-table-component' to fix support for newer versions of react-native-web. Not actively maintained/supported.",
+  "description": "Build table for react native. Forked from the original 'react-native-table-component' to fix support for newer versions of react-native-web.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andyasberry/react-native-table-component-2.git"
+    "url": "git+ssh://git@github.com:reap-nz/react-native-table-component.git"
   },
   "keywords": [
     "react-native",
@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/Gil2015/react-native-table-component/issues"
   },
-  "homepage": "https://github.com/andyasberry/react-native-table-component-2#readme",
+  "homepage": "https://github.com/reap-nz/react-native-table-component#readme",
   "devDependencies": {
     "@types/node": "^17.0.14",
     "@types/react": "^17.0.38",
