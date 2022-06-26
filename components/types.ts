@@ -7,7 +7,6 @@ export interface DefaultProps<DataType extends Data> {
   textStyle?: StyleProp<TextStyle>;
   borderStyle?: ViewStyle;
   rowIndex?: number;
-  onRowPress?: (rowIndex: number) => void;
   data: DataType;
   width?: React.ReactText;
   height?: React.ReactText;

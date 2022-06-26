@@ -36,25 +36,25 @@ var react_native_1 = require("react-native");
 var utils_1 = require("../utils");
 var cell_1 = require("./cell");
 var Row = function (props) {
-    var data = props.data, style = props.style, widthArr = props.widthArr, height = props.height, flexArr = props.flexArr, textStyle = props.textStyle, onRowPress = props.onRowPress, rowIndex = props.rowIndex, rest = __rest(props, ["data", "style", "widthArr", "height", "flexArr", "textStyle", "onRowPress", "rowIndex"]);
+    var data = props.data, style = props.style, widthArr = props.widthArr, height = props.height, flexArr = props.flexArr, textStyle = props.textStyle, rowIndex = props.rowIndex, rest = __rest(props, ["data", "style", "widthArr", "height", "flexArr", "textStyle", "rowIndex"]);
     var width = widthArr ? (0, utils_1.sum)(widthArr) : 0;
-    return data ? (<react_native_1.Pressable style={[height && { height: height }, width && { width: width }, styles.row, style]} onPress={function () { return onRowPress(rowIndex); }}>
+    return data ? (<react_native_1.View style={[height && { height: height }, width && { width: width }, styles.row, style]}>
       {data.map(function (item, i) {
             var flex = flexArr && flexArr[i];
             var wth = widthArr && widthArr[i];
             return <cell_1.Cell key={i} data={item} width={wth} height={height} flex={flex} textStyle={textStyle} {...rest}/>;
         })}
-    </react_native_1.Pressable>) : null;
+    </react_native_1.View>) : null;
 };
 exports.Row = Row;
 var Rows = function (props) {
-    var data = props.data, style = props.style, widthArr = props.widthArr, heightArr = props.heightArr, flexArr = props.flexArr, textStyle = props.textStyle, onRowPress = props.onRowPress, rest = __rest(props, ["data", "style", "widthArr", "heightArr", "flexArr", "textStyle", "onRowPress"]);
+    var data = props.data, style = props.style, widthArr = props.widthArr, heightArr = props.heightArr, flexArr = props.flexArr, textStyle = props.textStyle, rest = __rest(props, ["data", "style", "widthArr", "heightArr", "flexArr", "textStyle"]);
     var flex = flexArr ? (0, utils_1.sum)(flexArr) : 0;
     var width = widthArr ? (0, utils_1.sum)(widthArr) : 0;
     return data ? (<react_native_1.View style={[flex && { flex: flex }, width && { width: width }]}>
       {data.map(function (item, i) {
             var height = heightArr && heightArr[i];
-            return (<exports.Row key={i} data={item} rowIndex={i} widthArr={widthArr} height={height} flexArr={flexArr} style={style} textStyle={textStyle} onRowPress={onRowPress} {...rest}/>);
+            return (<exports.Row key={i} data={item} rowIndex={i} widthArr={widthArr} height={height} flexArr={flexArr} style={style} textStyle={textStyle} {...rest}/>);
         })}
     </react_native_1.View>) : null;
 };
