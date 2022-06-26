@@ -19,8 +19,6 @@ All credit for original work goes to <a data-hovercard-type="repository" data-ho
 
 This is a table component for react native.
 
-:exclamation: This package is NOT being actively maintained/supported. This is a forked version of [react-native-table-component](https://github.com/Gil2015/react-native-table-component#readme) and includes a change to support newer versions of react-native-web.
-
 - [Installation](#installation)
 - [Changelogs](#changelogs)
 - [Examples](#examples)
@@ -28,7 +26,6 @@ This is a table component for react native.
 - [Notice](#notice)
 - [License](#license)
 
-[切换到中文文档](https://github.com/Gil2015/react-native-table-component/blob/master/readme_zh.md)
 <br/><br/>
 
 ## Installation
