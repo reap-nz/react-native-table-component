@@ -1,6 +1,6 @@
 {
   "name": "react-native-table-component",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Build table for react native. Forked from the original 'react-native-table-component' to fix support for newer versions of react-native-web.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
